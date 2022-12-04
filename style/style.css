@@ -1,0 +1,103 @@
+ /* Section Benefits */
+
+.benefits__header {
+	margin-bottom: 120px;
+} 
+.benefits__heading {
+	/* выравнивание строчных и img по горизонтали */
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	margin-bottom: 90px;
+	position: relative;
+}
+
+.benefits__heading::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 500px;
+    width: 170px;
+	height: 90px;
+	border-bottom: 1px solid #EC7979;
+  }
+.benefits__slogan {
+	color: #86878B;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.benefits__list {
+	display: flex;
+}
+
+.benefits__card {
+	text-align: center;
+}
+
+.benefits__card-heading {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.benefits__card-text {
+	padding: 5px;
+	margin: 5px;
+}
+
+.benefits__circle {
+    height: 92px;
+    width: 92px;
+	border: 2px solid #EC7979;
+    border-radius: 50%;
+	padding: 10px;
+	/* auto работает, если задаем фикс ширину блока */
+	margin: auto;
+	margin-bottom: 50px;
+} 
+
+.benefits__icon {
+	height: 100%;
+}
+
+ /* Section Tabs */
+
+.tabs_card{
+	border: 1px solid #C6CBCD;
+	border-top: 0;
+}
+.tabs__list {
+	margin: 0;
+	height: 40px;
+	display: flex;
+}
+.tabs__tab {
+	width: 184px;
+	font-family: 'roboto-regular';
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 1px solid #C6CBCD;
+	
+}
+.tabs__list :last-child {
+	/* почему сдвигает остальные табы?? */
+	width: 100%;  
+	border-bottom: 1px solid #C6CBCD;
+}
+.tabs__tab_active {
+	width: 203px;
+	border: 1px solid #C6CBCD;
+	border-radius: 8px 8px 0 0;
+	border-bottom: 0;
+}
+
+.tabs_card {
+	display: flex;
+}
+.tabs__card-textblock {
+	margin-left: 100px;
+}
+.tabs__card-heading {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
